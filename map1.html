@@ -13,10 +13,12 @@
 <script src="https://code4fukui.github.io/egmapjs/sparql.js"></script>
 <script>"use strict"
 
-window.onload = function() {  //最初に表示される場所
+window.onload = function() {  //最初の表示
 	var map = initMap('mapid')
 	map.setZoom(16)   //ズームレベル 4(全国) ➔ 16(拡大)に変える
 	map.panTo([ 35.631414,140.138542 ]) // 千葉 原町スリバチ集落
+	
+	map.addIcon(35.631414,140.138542,"原町スリバチ集落"
 }
 
 </script>
