@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width"/>
 
-<title>マわたしのマップ</title>
+<title>わたしのマップ</title>
 
 <link rel="apple-touch-icon" href="app-icon.png"/>
 <meta property="og:image" content="ogp-image.jpg"/>
@@ -13,10 +13,10 @@
 <script src="https://code4fukui.github.io/egmapjs/sparql.js"></script>
 <script>"use strict"
 
-window.onload = function() {
+window.onload = function() {  //最初に表示される場所
 	var map = initMap('mapid')
-	map.setZoom(4)
-	map.panTo([ 35.943560,136.188917 ]) // 鯖江駅
+	map.setZoom(4)   //ズームレベル 4(全国) ➔ 16(拡大)に変える
+	map.panTo([ 35.631414,140.138542 ]) // 千葉 原町スリバチ集落
 }
 
 </script>
