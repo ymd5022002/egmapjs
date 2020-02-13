@@ -31,8 +31,8 @@ window.onload = function() {  //最初の表示
 		select ?uri ?name ?lat ?lng {
 			?uri ic:名称 [ ic:表記 ?name ].
 			?uri ic:地理座標 [ ic:緯度 ?lat; ic:経度 ?lng; ].
-			filter(contains(str(?name),'鯖江'))
-		} limit 100
+			filter(contains(str(?name),'山田'))
+		} limit 500
 	`
 
 	querySPARQL(query, function(data) {
