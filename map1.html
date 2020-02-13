@@ -18,8 +18,9 @@ window.onload = function() {  //最初の表示
 	map.setZoom(16)   //ズームレベル 4(全国) ➔ 16(拡大)に変える
 	map.panTo([ 35.631414,140.138542 ]) // 千葉 原町スリバチ集落
 	
-	map.addIcon(35.631414,140.138542,"原町スリバチ集落")
-	map.addIcon(35.628406, 140.152276,"山田うどん","icon/udon.png",100)
+	map.addIcon(35.631414,140.138542,"原町スリバチ集落","icon/suribachi.png",70)
+	map.addIcon(35.628406,140.152276,"山田うどん","icon/udon.png",70)
+	map.addIcon(35.627711,140.144819,"ヤマダ電機","icon/denki.png",70)
 	
 	map.on("click", (e) => alert(e.latlng))
 	
